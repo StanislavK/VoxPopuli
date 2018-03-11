@@ -1,2 +1,2 @@
 # VoxPopuli
-VoxPopuli
+VoxPopuli ~ Transparentní účty
