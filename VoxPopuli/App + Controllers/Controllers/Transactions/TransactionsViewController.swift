@@ -16,7 +16,14 @@ final class TransactionsViewController: UIViewController {
     fileprivate var noConnectionViewController: NoConnectionViewController?
     fileprivate var noDataViewController: NoDataViewController?
     fileprivate var loadingViewController: LoadingViewController?
-    
+    fileprivate lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = Theme.Colors.lightBlack
+        refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+        
+        return refreshControl
+    }()
+
     fileprivate var transactions: [Transaction] = [] {
         didSet {
             if transactions.count == 0 {
@@ -38,6 +45,7 @@ final class TransactionsViewController: UIViewController {
         
         setupObservers()
         setupView()
+        transactions = []
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +78,11 @@ final class TransactionsViewController: UIViewController {
         tableView.rowHeight = 187
     }
     
+    @objc func reloadData() {
+        refreshControl.beginRefreshing()
+        loadData()
+    }
+    
     func loadData() {
         guard ReachabilityManager.shared.isConnected else { return }
         print("Loading data/transactions")
@@ -78,6 +91,8 @@ final class TransactionsViewController: UIViewController {
             guard let strongSelf = self else {
                 return
             }
+            
+            strongSelf.refreshControl.endRefreshing()
             
             switch result {
             case .success(let fetchedTransactions):
@@ -94,11 +109,15 @@ final class TransactionsViewController: UIViewController {
     
     func perfromActionsWhenReachabilityChanged() {
         let isConnected = ReachabilityManager.shared.isConnected
-        if isConnected == false {
+        switch isConnected {
+        case true:
+            print("Is connected")
+            hideNoConnectionViewControler()
+            tableView.refreshControl = refreshControl
+        case false:
             print("No connection")
             showNoConnectionViewController()
-        } else {
-            hideNoConnectionViewControler()
+            tableView.refreshControl = nil
         }
     }
     
@@ -114,7 +133,7 @@ final class TransactionsViewController: UIViewController {
         case NSNotification.Name.UIApplicationDidBecomeActive:
             // Make sure you are in TransactionsViewController
             guard navigationController?.topViewController === self else { return }
-            loadData()
+        //loadData() // TODO: WIP:Refactor this here. Commented out to see NoDataViewController in action.
         default: break
         }
     }
@@ -140,6 +159,12 @@ final class TransactionsViewController: UIViewController {
         let noDataController = Storyboard.noDataViewController()
         addChildViewControllerToParentSelf(child: noDataController)
         noDataViewController = noDataController
+        noDataViewController?.reloadDataHandler = { [weak self] in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.reloadData()
+        }
     }
     
     func hideLoadingViewControler() {

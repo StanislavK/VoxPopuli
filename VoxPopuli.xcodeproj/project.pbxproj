@@ -36,6 +36,7 @@
 		C484E2372055F6C500FCDB8A /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484E2362055F6C500FCDB8A /* NetworkingError.swift */; };
 		C484E2392055FDCF00FCDB8A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484E2382055FDCF00FCDB8A /* Date+Extensions.swift */; };
 		C484E23B205609BC00FCDB8A /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484E23A205609BC00FCDB8A /* TransactionViewModel.swift */; };
+		C484E23E20568AB800FCDB8A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484E23D20568AB800FCDB8A /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		C484E2362055F6C500FCDB8A /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		C484E2382055FDCF00FCDB8A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		C484E23A205609BC00FCDB8A /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		C484E23D20568AB800FCDB8A /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			children = (
 				C443D70A2055CD07000C8B8D /* App */,
 				C443D70B2055CD13000C8B8D /* Controllers */,
+				C484E23C20568A6000FCDB8A /* Views */,
 			);
 			path = "App + Controllers";
 			sourceTree = "<group>";
@@ -251,6 +254,14 @@
 				C484E2322055F4F300FCDB8A /* Result.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		C484E23C20568A6000FCDB8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C484E23D20568AB800FCDB8A /* Button.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C9AC95559767AB4513D8BA5E /* Frameworks */ = {
@@ -404,6 +415,7 @@
 				C484E2372055F6C500FCDB8A /* NetworkingError.swift in Sources */,
 				C443D6FB2055CCF8000C8B8D /* TransactionsViewController.swift in Sources */,
 				C42DB7742055D53500529ACB /* ReachabilityManager.swift in Sources */,
+				C484E23E20568AB800FCDB8A /* Button.swift in Sources */,
 				C484E2332055F4F300FCDB8A /* Result.swift in Sources */,
 				C42DB7792055D67C00529ACB /* NoDataViewController.swift in Sources */,
 				C484E2392055FDCF00FCDB8A /* Date+Extensions.swift in Sources */,

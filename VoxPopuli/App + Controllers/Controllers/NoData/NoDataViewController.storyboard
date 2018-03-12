@@ -25,9 +25,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQZ-5d-juJ" customClass="Button" customModule="VoxPopuli" customModuleProvider="target">
+                                <rect key="frame" x="127" y="286" width="121" height="30"/>
+                                <state key="normal" title="Načíst z internetu"/>
+                                <connections>
+                                    <action selector="reloadData:" destination="YN2-My-tyN" eventType="touchUpInside" id="1oY-Am-DvB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BQZ-5d-juJ" firstAttribute="top" secondItem="uHV-vc-Ko7" secondAttribute="bottom" constant="25" id="M0x-83-mXp"/>
+                            <constraint firstItem="BQZ-5d-juJ" firstAttribute="centerX" secondItem="jCN-q6-NS7" secondAttribute="centerX" id="WSh-N6-qt3"/>
                             <constraint firstItem="uHV-vc-Ko7" firstAttribute="centerX" secondItem="jCN-q6-NS7" secondAttribute="centerX" id="hkh-KP-Ynp"/>
                             <constraint firstItem="uHV-vc-Ko7" firstAttribute="centerY" secondItem="jCN-q6-NS7" secondAttribute="centerY" multiplier="75%" id="zlc-NE-RJA"/>
                         </constraints>

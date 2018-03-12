@@ -9,4 +9,12 @@
 import UIKit
 
 final class NoDataViewController: UIViewController {
+    
+    var reloadDataHandler: (() -> Void)?
+    
+    // MARK: - IB Outlets
+    
+    @IBAction func reloadData(_ sender: Button) {
+        reloadDataHandler?()
+    }
 }
