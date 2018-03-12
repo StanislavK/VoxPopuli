@@ -90,8 +90,6 @@ final class TransactionsViewController: UIViewController {
                 strongSelf.showAlert(with: "Error", message: error.localizedDescription, cancelButtonText: "OK")
             }
         })
-        
-        transactions = []
     }
     
     func perfromActionsWhenReachabilityChanged() {
