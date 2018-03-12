@@ -1,0 +1,15 @@
+PODS:
+  - HTMLReader (2.1)
+  - ReachabilitySwift (4.1.0)
+
+DEPENDENCIES:
+  - HTMLReader (~> 2.1)
+  - ReachabilitySwift (~> 4.1.0)
+
+SPEC CHECKSUMS:
+  HTMLReader: dd75279b0532ff5d005ffe1c6512e33d1d52f861
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+
+PODFILE CHECKSUM: 8d1d97a77241a42d8bdf327a8fc3e1165e7bd63c
+
+COCOAPODS: 1.4.0

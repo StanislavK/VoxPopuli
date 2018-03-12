@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="RnC-Nu-yPa">
+            <objects>
+                <viewController storyboardIdentifier="LoadingViewController" id="sYT-OW-ClT" customClass="LoadingViewController" customModule="VoxPopuli" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dPM-FB-vWw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-GA-QRJ">
+                                <rect key="frame" x="169" y="231.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Načítám data ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-WB-Svm">
+                                <rect key="frame" x="125" y="191" width="126" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kjs-GA-QRJ" firstAttribute="centerX" secondItem="dPM-FB-vWw" secondAttribute="centerX" id="Q57-Ft-ffO"/>
+                            <constraint firstItem="gPc-WB-Svm" firstAttribute="centerX" secondItem="dPM-FB-vWw" secondAttribute="centerX" id="bkb-HL-s4h"/>
+                            <constraint firstItem="kjs-GA-QRJ" firstAttribute="top" secondItem="gPc-WB-Svm" secondAttribute="bottom" constant="20" id="h1h-iE-jcM"/>
+                            <constraint firstItem="kjs-GA-QRJ" firstAttribute="centerY" secondItem="dPM-FB-vWw" secondAttribute="centerY" multiplier="75%" id="rBg-VG-BJG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="omA-LH-t83"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="kjs-GA-QRJ" id="djK-Vs-BgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zg8-v2-Yfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.19999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

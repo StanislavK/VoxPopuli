@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028170946888B128529D0ACC869EF0BD /* HTMLTextNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B36B1E90EC0F8F4A1CB06CEAA6762D /* HTMLTextNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062700758218BA5685C99D9CEAF16838 /* HTMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3906AA59DCE2610832A9BCBE65A418FB /* HTMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CCDE18BB2331B1E3C426FBBB441B863 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C72FE52922658C64D42E292DF11628 /* Reachability.swift */; };
+		2152733C1745CFFBFD28A8CC98843FF1 /* HTMLDocument+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BEA59542CF8D943E2AFC91F6A462EC /* HTMLDocument+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28F6DC96289F20BA9B8A1301319273B3 /* HTMLOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB34A0ABF23B46203EFD8F1926AD402 /* HTMLOrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2B900936726AA666070474484311AE74 /* HTMLTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 247D02CAF2BC54F1D3904642D3828847 /* HTMLTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C88B9E5C900E9F3B3A3D697F600D55F /* HTMLPreprocessedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E02F1A6B68CFDB3AFC1AB400CAEAF /* HTMLPreprocessedInputStream.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3070348D6060B329DBED4CD6EC67CA4F /* HTMLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BAC557624126C6A88FD01F521DEA10B /* HTMLString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373907B56553769F42CA11457EA11F52 /* HTMLComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FABB4574D94A4612E5C8B6058FDA550 /* HTMLComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B8647603F5DF77BD8188015CA7C27CE /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF34FC0E5737D7769E66AF951E93438D /* ReachabilitySwift-dummy.m */; };
+		3D4DA55DFD9C6C15BC5E9D1541D20191 /* HTMLDocumentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F90FEE5F368644CE514B868AFED8F4C /* HTMLDocumentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E10D51191BDAAA21E6853F940285B0A /* HTMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 928852D01C16075B50953C5C06DCE0BC /* HTMLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F780DA582B8FA5EF4EE5E794AE6720 /* HTMLSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE932DBF7BDDECBFCAD98FD9710206F /* HTMLSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C7DE301862163ADCC9ACED3328090B2 /* HTMLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63067B314E5AA2B33C27E3E3A55257DB /* HTMLTextNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E5B221E16C4643574D64EC5A70FD6F8 /* HTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 287EA89FBDE18F741270A42158C27204 /* HTMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		512CDB4B6296729AE164F7AA0C326C3A /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8354DE4ACFF4678BC371A164EF26AEC2 /* HTMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		51B540F4854E0B955DF5D04C8F867E47 /* HTMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = B58BE4B7825437BCB1A725C3ADE58903 /* HTMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		580057C7AECD1ACA1D216712F44361AD /* HTMLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A00AAF16ED69BA64CCF6E1291949CA6D /* HTMLEncoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		59647949DAC598A5AED7946F42B481D1 /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8AC7A92EA9957E5FC718ACF2E972C0 /* HTMLComment.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E562124F6C304984F4AF5AF416FB33A /* HTMLNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 576B55A95A0EC83DEC1B00283066BB50 /* HTMLNamespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B38A0EB375B62E9474E3840CBA7480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		6645FB1E74AA5AFAAC40224B39079F09 /* HTMLPreprocessedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D7CC86F352A9692323BE3DCBEA3A7A38 /* HTMLPreprocessedInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		692DC6A09DDEC0F003A41C1F44B29F9D /* HTMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D6782292388172F0AD12B7931B024746 /* HTMLSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		69ED0A5972196645905EE7457F5DDECE /* HTMLTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E65F4A594C51971FE9333EDD9C563A /* HTMLTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A162B1779B9FC9DBC1743AECF6F3005 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A6AAAE373FCB779873C0E2BB86BA03 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AAD9C6151E7777B54C930FBC746861D /* NSString+HTMLEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = 47BD77FF7B9575465FE07D9575CF13BF /* NSString+HTMLEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76A68F661591F0DF46CF7BA2F081502E /* HTMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AAE0498EED9F488696356F1FCD74FC /* HTMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CD795CC3537DF51E91A7E368674F5CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		8D208F48AF1416EDD2640BAC16A79927 /* HTMLReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B826B08A05BDEF593995CD71DB12D503 /* HTMLReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7DE5D4CDE6CB12170568AAB3199768 /* HTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F0D7664F11C4BCF7521C7967A0CDEE /* HTMLElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		908CE6E84A12737DEE5D678CA1FAFDB1 /* HTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8F5643C1164BC44C349E024D647DE4 /* HTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92EC5B72213673B48153BE6BFEEBC562 /* HTMLSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F34768D82571506FF151BAA6A5C9B6 /* HTMLSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AEF6BD3355507395ED291AD627DC7C5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */; };
+		9B44373005C694742FDE5FF9456D4538 /* HTMLReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EEDE8AE77589911A79A788920D960 /* HTMLReader-dummy.m */; };
+		A4F34E860470DC3E59D919D2269F94A5 /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 718BB16E3A68CDEB0EAC60DE4E329A80 /* NSString+HTMLEntities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACDE1EC7B42D5716A50F7DEB79790CCE /* HTMLEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FDBB70C66AFF5AE1C8C6183B70693A /* HTMLEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5A655EBADC21131ABB20878EF5DAAFB /* HTMLQuirksMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6FA1DD85B45F6926B36A072BF2B335 /* HTMLQuirksMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD824BA27F71128AB574B970C9623BF9 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0740433FDFC37D4FAF89C8EEBCB785A /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C09B37B1D7DFD0EC390197F5A4456DB9 /* HTMLTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9694AA16B8E5F9E0D5E7554F0E0974FC /* HTMLTokenizer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C34923297BBD054FAFE0E91E91E59A66 /* HTMLDocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9FD287AD359411F0FD6D39DBB88B99 /* HTMLDocumentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C645975C8DD49EF7D324C449AF2776BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		C653EDE79158EBCAD5BAB39CAFCEBA9E /* HTMLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB7DE7F9F779B8ED108947B6E1B6F0E /* HTMLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C84A7ABE954D7389F302A795B01FC65C /* HTMLSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E78D7D9C51DD8A9030C9095792DD28 /* HTMLSelector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D02FA0E0A2C43083FD76ADCC412706FD /* HTMLTreeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2583E9E7CEEF06B216C8D93A9C526813 /* HTMLTreeEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D31A82164DD656488BED5EA0FF806B83 /* Pods-VoxPopuli-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC973D410B3596B6876F5A00D42F776 /* Pods-VoxPopuli-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D48FE9208DD2CA6EE32A4A53FFD6882C /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D5E518A8FBD86B56E688883DDCAFC /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D4F59F4F808A338ACF9C23EFACC7F825 /* HTMLOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF4EC8F1A375ADBE217D2D34ABA741F /* HTMLOrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8D8AE6A79861AE0377F8E73FB3574AD /* Pods-VoxPopuli-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F176634162B1BBD87DC5E4DBCF4759BB /* Pods-VoxPopuli-dummy.m */; };
+		F21658154F6940781B7D465057A5E028 /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3849B6B2EBBFFE99FE4586F5B26C0B8E /* HTMLEntities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FE29FC28490CA7B79F9AD4E7E4AA5DCB /* HTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = CF02FB37A5987AFF23B6A35E8042CCE0 /* HTMLString.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FFA2B7BDE399B1C1547AEFA3C84311CF /* HTMLTreeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7277F0A9969BB21D550A6B65AAE40E /* HTMLTreeEnumerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25BF516B712564C541FFDBF5162B6C94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D9A0C6C554FC46CE3DFB0CF48CCA77;
+			remoteInfo = HTMLReader;
+		};
+		CA50C58E190D2725E2E23BF3B551209E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3CBC04F00602232C50E9120C29AC58;
+			remoteInfo = ReachabilitySwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A6AAAE373FCB779873C0E2BB86BA03 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		045EEDE8AE77589911A79A788920D960 /* HTMLReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTMLReader-dummy.m"; sourceTree = "<group>"; };
+		0A6FA1DD85B45F6926B36A072BF2B335 /* HTMLQuirksMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLQuirksMode.h; path = Sources/include/HTMLQuirksMode.h; sourceTree = "<group>"; };
+		1A66EB4DF5043F0C1B38ACD5DD2E8663 /* Pods-VoxPopuli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoxPopuli.debug.xcconfig"; sourceTree = "<group>"; };
+		23AAE0498EED9F488696356F1FCD74FC /* HTMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLElement.h; path = Sources/include/HTMLElement.h; sourceTree = "<group>"; };
+		247D02CAF2BC54F1D3904642D3828847 /* HTMLTokenizerState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTokenizerState.h; path = Sources/include/HTMLTokenizerState.h; sourceTree = "<group>"; };
+		2583E9E7CEEF06B216C8D93A9C526813 /* HTMLTreeEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTreeEnumerator.h; path = Sources/include/HTMLTreeEnumerator.h; sourceTree = "<group>"; };
+		287EA89FBDE18F741270A42158C27204 /* HTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLDocument.h; path = Sources/include/HTMLDocument.h; sourceTree = "<group>"; };
+		3849B6B2EBBFFE99FE4586F5B26C0B8E /* HTMLEntities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLEntities.m; path = Sources/HTMLEntities.m; sourceTree = "<group>"; };
+		3906AA59DCE2610832A9BCBE65A418FB /* HTMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = Sources/include/HTMLNode.h; sourceTree = "<group>"; };
+		3A8B68F18A4CC0739C24899BA995697E /* Pods-VoxPopuli-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VoxPopuli-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EF3407C73C22FF2D31C1D5936998AD8 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		3FABB4574D94A4612E5C8B6058FDA550 /* HTMLComment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLComment.h; path = Sources/include/HTMLComment.h; sourceTree = "<group>"; };
+		46C128C8D0EB349D914FD7547F21FA8E /* Pods-VoxPopuli-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoxPopuli-resources.sh"; sourceTree = "<group>"; };
+		4754738727C03AF732EF1C786D9E813C /* Pods_VoxPopuli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VoxPopuli.framework; path = "Pods-VoxPopuli.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BD77FF7B9575465FE07D9575CF13BF /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HTMLEntities.h"; path = "Sources/include/NSString+HTMLEntities.h"; sourceTree = "<group>"; };
+		48E65F4A594C51971FE9333EDD9C563A /* HTMLTokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTokenizer.h; path = Sources/include/HTMLTokenizer.h; sourceTree = "<group>"; };
+		49E78D7D9C51DD8A9030C9095792DD28 /* HTMLSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLSelector.m; path = Sources/HTMLSelector.m; sourceTree = "<group>"; };
+		4BAC557624126C6A88FD01F521DEA10B /* HTMLString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLString.h; path = Sources/include/HTMLString.h; sourceTree = "<group>"; };
+		4E85499F541E324C528E58E927C520F1 /* Pods-VoxPopuli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoxPopuli.release.xcconfig"; sourceTree = "<group>"; };
+		576B55A95A0EC83DEC1B00283066BB50 /* HTMLNamespace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLNamespace.h; path = Sources/include/HTMLNamespace.h; sourceTree = "<group>"; };
+		5985BBF1648E39A672E1355DB4837699 /* HTMLReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTMLReader.modulemap; sourceTree = "<group>"; };
+		59A9C6A9D4F5AE7BB6739CAA57762A7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB7DE7F9F779B8ED108947B6E1B6F0E /* HTMLEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLEncoding.h; path = Sources/include/HTMLEncoding.h; sourceTree = "<group>"; };
+		5E2AF145B35DA5C3F3974B18C9BF2ABC /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		5E9FD287AD359411F0FD6D39DBB88B99 /* HTMLDocumentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLDocumentType.m; path = Sources/HTMLDocumentType.m; sourceTree = "<group>"; };
+		63067B314E5AA2B33C27E3E3A55257DB /* HTMLTextNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLTextNode.m; path = Sources/HTMLTextNode.m; sourceTree = "<group>"; };
+		661FA4D4F9F09C3D4F7A3C3CDDE2E5FD /* Pods-VoxPopuli.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VoxPopuli.modulemap"; sourceTree = "<group>"; };
+		6E7277F0A9969BB21D550A6B65AAE40E /* HTMLTreeEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLTreeEnumerator.m; path = Sources/HTMLTreeEnumerator.m; sourceTree = "<group>"; };
+		6E8AC7A92EA9957E5FC718ACF2E972C0 /* HTMLComment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLComment.m; path = Sources/HTMLComment.m; sourceTree = "<group>"; };
+		6FE932DBF7BDDECBFCAD98FD9710206F /* HTMLSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLSelector.h; path = Sources/include/HTMLSelector.h; sourceTree = "<group>"; };
+		706E50C956D6763CB7627E20DCE6C7F9 /* HTMLReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTMLReader-prefix.pch"; sourceTree = "<group>"; };
+		718BB16E3A68CDEB0EAC60DE4E329A80 /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTMLEntities.m"; path = "Sources/NSString+HTMLEntities.m"; sourceTree = "<group>"; };
+		71C72FE52922658C64D42E292DF11628 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
+		8354DE4ACFF4678BC371A164EF26AEC2 /* HTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLDocument.m; path = Sources/HTMLDocument.m; sourceTree = "<group>"; };
+		8ADD30C8EEE63D0648C228560F58AD21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F90FEE5F368644CE514B868AFED8F4C /* HTMLDocumentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLDocumentType.h; path = Sources/include/HTMLDocumentType.h; sourceTree = "<group>"; };
+		91A00A8D763516E5E163B3EFAEBA2749 /* HTMLReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTMLReader.xcconfig; sourceTree = "<group>"; };
+		928852D01C16075B50953C5C06DCE0BC /* HTMLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLSerialization.h; path = Sources/include/HTMLSerialization.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		943E02F1A6B68CFDB3AFC1AB400CAEAF /* HTMLPreprocessedInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLPreprocessedInputStream.m; path = Sources/HTMLPreprocessedInputStream.m; sourceTree = "<group>"; };
+		95B36B1E90EC0F8F4A1CB06CEAA6762D /* HTMLTextNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLTextNode.h; path = Sources/include/HTMLTextNode.h; sourceTree = "<group>"; };
+		9694AA16B8E5F9E0D5E7554F0E0974FC /* HTMLTokenizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLTokenizer.m; path = Sources/HTMLTokenizer.m; sourceTree = "<group>"; };
+		97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		98F0D7664F11C4BCF7521C7967A0CDEE /* HTMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLElement.m; path = Sources/HTMLElement.m; sourceTree = "<group>"; };
+		A00AAF16ED69BA64CCF6E1291949CA6D /* HTMLEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLEncoding.m; path = Sources/HTMLEncoding.m; sourceTree = "<group>"; };
+		A88F90ACCB7993D27C12AD5DA15426E3 /* Pods-VoxPopuli-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoxPopuli-frameworks.sh"; sourceTree = "<group>"; };
+		B58BE4B7825437BCB1A725C3ADE58903 /* HTMLReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLReader.h; path = Sources/include/HTMLReader.h; sourceTree = "<group>"; };
+		B5BEA59542CF8D943E2AFC91F6A462EC /* HTMLDocument+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "HTMLDocument+Private.h"; path = "Sources/include/HTMLDocument+Private.h"; sourceTree = "<group>"; };
+		B826B08A05BDEF593995CD71DB12D503 /* HTMLReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTMLReader-umbrella.h"; sourceTree = "<group>"; };
+		B8FDBB70C66AFF5AE1C8C6183B70693A /* HTMLEntities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLEntities.h; path = Sources/include/HTMLEntities.h; sourceTree = "<group>"; };
+		C8B37D18E597C79FB7315AE70666D50E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF4EC8F1A375ADBE217D2D34ABA741F /* HTMLOrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLOrderedDictionary.h; path = Sources/include/HTMLOrderedDictionary.h; sourceTree = "<group>"; };
+		CF02FB37A5987AFF23B6A35E8042CCE0 /* HTMLString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLString.m; path = Sources/HTMLString.m; sourceTree = "<group>"; };
+		D0EF6FA02D301C9AAE8CC54B63FD0900 /* Pods-VoxPopuli-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VoxPopuli-acknowledgements.plist"; sourceTree = "<group>"; };
+		D19C97F472CC1BE78019842A99BA6673 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		D6782292388172F0AD12B7931B024746 /* HTMLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLSerialization.m; path = Sources/HTMLSerialization.m; sourceTree = "<group>"; };
+		D7CC86F352A9692323BE3DCBEA3A7A38 /* HTMLPreprocessedInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLPreprocessedInputStream.h; path = Sources/include/HTMLPreprocessedInputStream.h; sourceTree = "<group>"; };
+		D9F34768D82571506FF151BAA6A5C9B6 /* HTMLSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLSupport.h; path = Sources/include/HTMLSupport.h; sourceTree = "<group>"; };
+		DE0D5E518A8FBD86B56E688883DDCAFC /* HTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLParser.m; path = Sources/HTMLParser.m; sourceTree = "<group>"; };
+		DEC973D410B3596B6876F5A00D42F776 /* Pods-VoxPopuli-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VoxPopuli-umbrella.h"; sourceTree = "<group>"; };
+		DF34FC0E5737D7769E66AF951E93438D /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		E0740433FDFC37D4FAF89C8EEBCB785A /* HTMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = Sources/HTMLNode.m; sourceTree = "<group>"; };
+		E08EE825FDBF9CD621E033F4690B047C /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A028FF59FE83A740340E842292F412 /* HTMLReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTMLReader.framework; path = HTMLReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F176634162B1BBD87DC5E4DBCF4759BB /* Pods-VoxPopuli-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VoxPopuli-dummy.m"; sourceTree = "<group>"; };
+		F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FCB34A0ABF23B46203EFD8F1926AD402 /* HTMLOrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLOrderedDictionary.m; path = Sources/HTMLOrderedDictionary.m; sourceTree = "<group>"; };
+		FE8F5643C1164BC44C349E024D647DE4 /* HTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = Sources/include/HTMLParser.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A34072A92EDFF4973D7644709087062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C645975C8DD49EF7D324C449AF2776BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943E920404EDE0458F5693C34860A226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD795CC3537DF51E91A7E368674F5CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8689C933D267AC89548C6EF0A2EB3FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B38A0EB375B62E9474E3840CBA7480 /* Foundation.framework in Frameworks */,
+				9AEF6BD3355507395ED291AD627DC7C5 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14DBD1CC032ED2BCCDF48B1F5684292C /* Pods-VoxPopuli */ = {
+			isa = PBXGroup;
+			children = (
+				8ADD30C8EEE63D0648C228560F58AD21 /* Info.plist */,
+				661FA4D4F9F09C3D4F7A3C3CDDE2E5FD /* Pods-VoxPopuli.modulemap */,
+				3A8B68F18A4CC0739C24899BA995697E /* Pods-VoxPopuli-acknowledgements.markdown */,
+				D0EF6FA02D301C9AAE8CC54B63FD0900 /* Pods-VoxPopuli-acknowledgements.plist */,
+				F176634162B1BBD87DC5E4DBCF4759BB /* Pods-VoxPopuli-dummy.m */,
+				A88F90ACCB7993D27C12AD5DA15426E3 /* Pods-VoxPopuli-frameworks.sh */,
+				46C128C8D0EB349D914FD7547F21FA8E /* Pods-VoxPopuli-resources.sh */,
+				DEC973D410B3596B6876F5A00D42F776 /* Pods-VoxPopuli-umbrella.h */,
+				1A66EB4DF5043F0C1B38ACD5DD2E8663 /* Pods-VoxPopuli.debug.xcconfig */,
+				4E85499F541E324C528E58E927C520F1 /* Pods-VoxPopuli.release.xcconfig */,
+			);
+			name = "Pods-VoxPopuli";
+			path = "Target Support Files/Pods-VoxPopuli";
+			sourceTree = "<group>";
+		};
+		1FF421F5554CC9671745FDFF191D7B39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				270DF12F6175D0C96B2597ED82B37623 /* HTMLReader */,
+				55318BBBE54807998818CAACE6F02988 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		270DF12F6175D0C96B2597ED82B37623 /* HTMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				3FABB4574D94A4612E5C8B6058FDA550 /* HTMLComment.h */,
+				6E8AC7A92EA9957E5FC718ACF2E972C0 /* HTMLComment.m */,
+				287EA89FBDE18F741270A42158C27204 /* HTMLDocument.h */,
+				8354DE4ACFF4678BC371A164EF26AEC2 /* HTMLDocument.m */,
+				B5BEA59542CF8D943E2AFC91F6A462EC /* HTMLDocument+Private.h */,
+				8F90FEE5F368644CE514B868AFED8F4C /* HTMLDocumentType.h */,
+				5E9FD287AD359411F0FD6D39DBB88B99 /* HTMLDocumentType.m */,
+				23AAE0498EED9F488696356F1FCD74FC /* HTMLElement.h */,
+				98F0D7664F11C4BCF7521C7967A0CDEE /* HTMLElement.m */,
+				5CB7DE7F9F779B8ED108947B6E1B6F0E /* HTMLEncoding.h */,
+				A00AAF16ED69BA64CCF6E1291949CA6D /* HTMLEncoding.m */,
+				B8FDBB70C66AFF5AE1C8C6183B70693A /* HTMLEntities.h */,
+				3849B6B2EBBFFE99FE4586F5B26C0B8E /* HTMLEntities.m */,
+				576B55A95A0EC83DEC1B00283066BB50 /* HTMLNamespace.h */,
+				3906AA59DCE2610832A9BCBE65A418FB /* HTMLNode.h */,
+				E0740433FDFC37D4FAF89C8EEBCB785A /* HTMLNode.m */,
+				CDF4EC8F1A375ADBE217D2D34ABA741F /* HTMLOrderedDictionary.h */,
+				FCB34A0ABF23B46203EFD8F1926AD402 /* HTMLOrderedDictionary.m */,
+				FE8F5643C1164BC44C349E024D647DE4 /* HTMLParser.h */,
+				DE0D5E518A8FBD86B56E688883DDCAFC /* HTMLParser.m */,
+				D7CC86F352A9692323BE3DCBEA3A7A38 /* HTMLPreprocessedInputStream.h */,
+				943E02F1A6B68CFDB3AFC1AB400CAEAF /* HTMLPreprocessedInputStream.m */,
+				0A6FA1DD85B45F6926B36A072BF2B335 /* HTMLQuirksMode.h */,
+				B58BE4B7825437BCB1A725C3ADE58903 /* HTMLReader.h */,
+				6FE932DBF7BDDECBFCAD98FD9710206F /* HTMLSelector.h */,
+				49E78D7D9C51DD8A9030C9095792DD28 /* HTMLSelector.m */,
+				928852D01C16075B50953C5C06DCE0BC /* HTMLSerialization.h */,
+				D6782292388172F0AD12B7931B024746 /* HTMLSerialization.m */,
+				4BAC557624126C6A88FD01F521DEA10B /* HTMLString.h */,
+				CF02FB37A5987AFF23B6A35E8042CCE0 /* HTMLString.m */,
+				D9F34768D82571506FF151BAA6A5C9B6 /* HTMLSupport.h */,
+				95B36B1E90EC0F8F4A1CB06CEAA6762D /* HTMLTextNode.h */,
+				63067B314E5AA2B33C27E3E3A55257DB /* HTMLTextNode.m */,
+				48E65F4A594C51971FE9333EDD9C563A /* HTMLTokenizer.h */,
+				9694AA16B8E5F9E0D5E7554F0E0974FC /* HTMLTokenizer.m */,
+				247D02CAF2BC54F1D3904642D3828847 /* HTMLTokenizerState.h */,
+				2583E9E7CEEF06B216C8D93A9C526813 /* HTMLTreeEnumerator.h */,
+				6E7277F0A9969BB21D550A6B65AAE40E /* HTMLTreeEnumerator.m */,
+				47BD77FF7B9575465FE07D9575CF13BF /* NSString+HTMLEntities.h */,
+				718BB16E3A68CDEB0EAC60DE4E329A80 /* NSString+HTMLEntities.m */,
+				3F7D63947AC4D6D884066968D9738F33 /* Support Files */,
+			);
+			name = HTMLReader;
+			path = HTMLReader;
+			sourceTree = "<group>";
+		};
+		2AB745707602707EDC4EE8879A7FA447 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14DBD1CC032ED2BCCDF48B1F5684292C /* Pods-VoxPopuli */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3F7D63947AC4D6D884066968D9738F33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5985BBF1648E39A672E1355DB4837699 /* HTMLReader.modulemap */,
+				91A00A8D763516E5E163B3EFAEBA2749 /* HTMLReader.xcconfig */,
+				045EEDE8AE77589911A79A788920D960 /* HTMLReader-dummy.m */,
+				706E50C956D6763CB7627E20DCE6C7F9 /* HTMLReader-prefix.pch */,
+				B826B08A05BDEF593995CD71DB12D503 /* HTMLReader-umbrella.h */,
+				59A9C6A9D4F5AE7BB6739CAA57762A7F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HTMLReader";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7E283C74B7E79D37D9BAAFF277942F5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55318BBBE54807998818CAACE6F02988 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				71C72FE52922658C64D42E292DF11628 /* Reachability.swift */,
+				A5974437455AC3ED1F99F157A6E2A54B /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		6DEDDFD02596EA186B6E7CD00FFC6589 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5A028FF59FE83A740340E842292F412 /* HTMLReader.framework */,
+				4754738727C03AF732EF1C786D9E813C /* Pods_VoxPopuli.framework */,
+				E08EE825FDBF9CD621E033F4690B047C /* Reachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				1FF421F5554CC9671745FDFF191D7B39 /* Pods */,
+				6DEDDFD02596EA186B6E7CD00FFC6589 /* Products */,
+				2AB745707602707EDC4EE8879A7FA447 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A5974437455AC3ED1F99F157A6E2A54B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8B37D18E597C79FB7315AE70666D50E /* Info.plist */,
+				5E2AF145B35DA5C3F3974B18C9BF2ABC /* ReachabilitySwift.modulemap */,
+				3EF3407C73C22FF2D31C1D5936998AD8 /* ReachabilitySwift.xcconfig */,
+				DF34FC0E5737D7769E66AF951E93438D /* ReachabilitySwift-dummy.m */,
+				D19C97F472CC1BE78019842A99BA6673 /* ReachabilitySwift-prefix.pch */,
+				03A6AAAE373FCB779873C0E2BB86BA03 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		E7E283C74B7E79D37D9BAAFF277942F5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */,
+				F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A2513B6A6853B064A7E6209CECDECE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373907B56553769F42CA11457EA11F52 /* HTMLComment.h in Headers */,
+				2152733C1745CFFBFD28A8CC98843FF1 /* HTMLDocument+Private.h in Headers */,
+				4E5B221E16C4643574D64EC5A70FD6F8 /* HTMLDocument.h in Headers */,
+				3D4DA55DFD9C6C15BC5E9D1541D20191 /* HTMLDocumentType.h in Headers */,
+				76A68F661591F0DF46CF7BA2F081502E /* HTMLElement.h in Headers */,
+				C653EDE79158EBCAD5BAB39CAFCEBA9E /* HTMLEncoding.h in Headers */,
+				ACDE1EC7B42D5716A50F7DEB79790CCE /* HTMLEntities.h in Headers */,
+				5E562124F6C304984F4AF5AF416FB33A /* HTMLNamespace.h in Headers */,
+				062700758218BA5685C99D9CEAF16838 /* HTMLNode.h in Headers */,
+				D4F59F4F808A338ACF9C23EFACC7F825 /* HTMLOrderedDictionary.h in Headers */,
+				908CE6E84A12737DEE5D678CA1FAFDB1 /* HTMLParser.h in Headers */,
+				6645FB1E74AA5AFAAC40224B39079F09 /* HTMLPreprocessedInputStream.h in Headers */,
+				B5A655EBADC21131ABB20878EF5DAAFB /* HTMLQuirksMode.h in Headers */,
+				8D208F48AF1416EDD2640BAC16A79927 /* HTMLReader-umbrella.h in Headers */,
+				51B540F4854E0B955DF5D04C8F867E47 /* HTMLReader.h in Headers */,
+				47F780DA582B8FA5EF4EE5E794AE6720 /* HTMLSelector.h in Headers */,
+				3E10D51191BDAAA21E6853F940285B0A /* HTMLSerialization.h in Headers */,
+				3070348D6060B329DBED4CD6EC67CA4F /* HTMLString.h in Headers */,
+				92EC5B72213673B48153BE6BFEEBC562 /* HTMLSupport.h in Headers */,
+				028170946888B128529D0ACC869EF0BD /* HTMLTextNode.h in Headers */,
+				69ED0A5972196645905EE7457F5DDECE /* HTMLTokenizer.h in Headers */,
+				2B900936726AA666070474484311AE74 /* HTMLTokenizerState.h in Headers */,
+				D02FA0E0A2C43083FD76ADCC412706FD /* HTMLTreeEnumerator.h in Headers */,
+				6AAD9C6151E7777B54C930FBC746861D /* NSString+HTMLEntities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D4260C6502516F5D4339185399163 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31A82164DD656488BED5EA0FF806B83 /* Pods-VoxPopuli-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805653D238A21AF1FF8F969BDCB6431D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A162B1779B9FC9DBC1743AECF6F3005 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2EA694EC47A9D8F4CFE80168CA49D107 /* Pods-VoxPopuli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94B2EC1197799310D32FCDE26FA0895F /* Build configuration list for PBXNativeTarget "Pods-VoxPopuli" */;
+			buildPhases = (
+				3A9AE48C9B0C71BD9AB6A8470D1418DF /* Sources */,
+				0A34072A92EDFF4973D7644709087062 /* Frameworks */,
+				688D4260C6502516F5D4339185399163 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03551A3C95F51730CAC19D91A9D97845 /* PBXTargetDependency */,
+				AF31AA6353AF6633B156F83F222339AC /* PBXTargetDependency */,
+			);
+			name = "Pods-VoxPopuli";
+			productName = "Pods-VoxPopuli";
+			productReference = 4754738727C03AF732EF1C786D9E813C /* Pods_VoxPopuli.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32D9A0C6C554FC46CE3DFB0CF48CCA77 /* HTMLReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A930BEF7FB92F43912517983BB0EE86C /* Build configuration list for PBXNativeTarget "HTMLReader" */;
+			buildPhases = (
+				327F9C6A703E82BB636EEAFF4DE05E55 /* Sources */,
+				943E920404EDE0458F5693C34860A226 /* Frameworks */,
+				5A2513B6A6853B064A7E6209CECDECE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTMLReader;
+			productName = HTMLReader;
+			productReference = E5A028FF59FE83A740340E842292F412 /* HTMLReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED3CBC04F00602232C50E9120C29AC58 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3BAC389C08CC802AA62EBB37F43EE2 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				6F709931699FBD03F90E391FE2FF9B10 /* Sources */,
+				D8689C933D267AC89548C6EF0A2EB3FF /* Frameworks */,
+				805653D238A21AF1FF8F969BDCB6431D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = E08EE825FDBF9CD621E033F4690B047C /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6DEDDFD02596EA186B6E7CD00FFC6589 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D9A0C6C554FC46CE3DFB0CF48CCA77 /* HTMLReader */,
+				2EA694EC47A9D8F4CFE80168CA49D107 /* Pods-VoxPopuli */,
+				ED3CBC04F00602232C50E9120C29AC58 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327F9C6A703E82BB636EEAFF4DE05E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59647949DAC598A5AED7946F42B481D1 /* HTMLComment.m in Sources */,
+				512CDB4B6296729AE164F7AA0C326C3A /* HTMLDocument.m in Sources */,
+				C34923297BBD054FAFE0E91E91E59A66 /* HTMLDocumentType.m in Sources */,
+				8D7DE5D4CDE6CB12170568AAB3199768 /* HTMLElement.m in Sources */,
+				580057C7AECD1ACA1D216712F44361AD /* HTMLEncoding.m in Sources */,
+				F21658154F6940781B7D465057A5E028 /* HTMLEntities.m in Sources */,
+				BD824BA27F71128AB574B970C9623BF9 /* HTMLNode.m in Sources */,
+				28F6DC96289F20BA9B8A1301319273B3 /* HTMLOrderedDictionary.m in Sources */,
+				D48FE9208DD2CA6EE32A4A53FFD6882C /* HTMLParser.m in Sources */,
+				2C88B9E5C900E9F3B3A3D697F600D55F /* HTMLPreprocessedInputStream.m in Sources */,
+				9B44373005C694742FDE5FF9456D4538 /* HTMLReader-dummy.m in Sources */,
+				C84A7ABE954D7389F302A795B01FC65C /* HTMLSelector.m in Sources */,
+				692DC6A09DDEC0F003A41C1F44B29F9D /* HTMLSerialization.m in Sources */,
+				FE29FC28490CA7B79F9AD4E7E4AA5DCB /* HTMLString.m in Sources */,
+				4C7DE301862163ADCC9ACED3328090B2 /* HTMLTextNode.m in Sources */,
+				C09B37B1D7DFD0EC390197F5A4456DB9 /* HTMLTokenizer.m in Sources */,
+				FFA2B7BDE399B1C1547AEFA3C84311CF /* HTMLTreeEnumerator.m in Sources */,
+				A4F34E860470DC3E59D919D2269F94A5 /* NSString+HTMLEntities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9AE48C9B0C71BD9AB6A8470D1418DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D8AE6A79861AE0377F8E73FB3574AD /* Pods-VoxPopuli-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F709931699FBD03F90E391FE2FF9B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCDE18BB2331B1E3C426FBBB441B863 /* Reachability.swift in Sources */,
+				3B8647603F5DF77BD8188015CA7C27CE /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03551A3C95F51730CAC19D91A9D97845 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTMLReader;
+			target = 32D9A0C6C554FC46CE3DFB0CF48CCA77 /* HTMLReader */;
+			targetProxy = 25BF516B712564C541FFDBF5162B6C94 /* PBXContainerItemProxy */;
+		};
+		AF31AA6353AF6633B156F83F222339AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = ED3CBC04F00602232C50E9120C29AC58 /* ReachabilitySwift */;
+			targetProxy = CA50C58E190D2725E2E23BF3B551209E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D8B251169D583E99A7DBECA71267E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A66EB4DF5043F0C1B38ACD5DD2E8663 /* Pods-VoxPopuli.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VoxPopuli/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VoxPopuli/Pods-VoxPopuli.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VoxPopuli;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13A95306D85E4471AB6BE665B012E60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5002D049D33F708224ACA4E5AC074447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E85499F541E324C528E58E927C520F1 /* Pods-VoxPopuli.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VoxPopuli/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VoxPopuli/Pods-VoxPopuli.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VoxPopuli;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		582CBA1E5175292215504827C1BDBCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF3407C73C22FF2D31C1D5936998AD8 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E8333274F4AB64785B04AB5B2A37231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E2229309664565F8C6F3FFF5693EFE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A00A8D763516E5E163B3EFAEBA2749 /* HTMLReader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTMLReader/HTMLReader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTMLReader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HTMLReader/HTMLReader.modulemap";
+				PRODUCT_NAME = HTMLReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E99FCFA6827BC9BA9D0CB2EBFCD5A0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF3407C73C22FF2D31C1D5936998AD8 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD82ACE197680C601F5A09377F7B3468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A00A8D763516E5E163B3EFAEBA2749 /* HTMLReader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTMLReader/HTMLReader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTMLReader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HTMLReader/HTMLReader.modulemap";
+				PRODUCT_NAME = HTMLReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A95306D85E4471AB6BE665B012E60A /* Debug */,
+				8E8333274F4AB64785B04AB5B2A37231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3BAC389C08CC802AA62EBB37F43EE2 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582CBA1E5175292215504827C1BDBCEB /* Debug */,
+				E99FCFA6827BC9BA9D0CB2EBFCD5A0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94B2EC1197799310D32FCDE26FA0895F /* Build configuration list for PBXNativeTarget "Pods-VoxPopuli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8B251169D583E99A7DBECA71267E87 /* Debug */,
+				5002D049D33F708224ACA4E5AC074447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A930BEF7FB92F43912517983BB0EE86C /* Build configuration list for PBXNativeTarget "HTMLReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2229309664565F8C6F3FFF5693EFE5F /* Debug */,
+				FD82ACE197680C601F5A09377F7B3468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
