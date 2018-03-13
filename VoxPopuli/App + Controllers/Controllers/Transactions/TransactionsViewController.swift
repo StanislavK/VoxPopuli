@@ -75,7 +75,8 @@ final class TransactionsViewController: UIViewController {
         tableView.tableFooterView = UITableViewHeaderFooterView()
         tableView.backgroundColor = .clear
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
-        tableView.rowHeight = 187
+        tableView.rowHeight = 300
+        tableView.separatorStyle = .none
     }
     
     @objc func reloadData() {
