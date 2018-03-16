@@ -20,7 +20,7 @@ final class TransactionsViewController: UIViewController {
         let refreshControl = UIRefreshControl()
         refreshControl.tintColor = Theme.Colors.lightBlack
         refreshControl.backgroundColor = .clear
-        refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         
         return refreshControl
     }()
@@ -80,8 +80,15 @@ final class TransactionsViewController: UIViewController {
         tableView.separatorStyle = .none
     }
     
-    @objc func reloadData() {
+    @objc func refresh() {
+        // check if content offset of the tableView is 0 i.e. we do the refresh programatically
+        if fabs(tableView.contentOffset.y) < CGFloat(Float.ulpOfOne) {
+                UIView.animate(withDuration: 1.25, delay: 0, options: UIViewAnimationOptions.beginFromCurrentState, animations: {
+                    self.tableView.setContentOffset(CGPoint(x: 0, y: self.tableView.contentOffset.y - self.refreshControl.frame.size.height), animated: true)
+                }, completion: nil)
+        }
         refreshControl.beginRefreshing()
+        
         loadData()
     }
     
@@ -164,7 +171,7 @@ final class TransactionsViewController: UIViewController {
             guard let strongSelf = self else {
                 return
             }
-            strongSelf.reloadData()
+            strongSelf.refresh()
         }
     }
     
