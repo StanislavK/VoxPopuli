@@ -19,6 +19,7 @@ final class TransactionsViewController: UIViewController {
     fileprivate lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.tintColor = Theme.Colors.lightBlack
+        refreshControl.backgroundColor = .clear
         refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
         
         return refreshControl
@@ -92,7 +93,6 @@ final class TransactionsViewController: UIViewController {
             guard let strongSelf = self else {
                 return
             }
-            
             strongSelf.refreshControl.endRefreshing()
             
             switch result {
